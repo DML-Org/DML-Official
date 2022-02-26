@@ -63,11 +63,20 @@ class TgUploader:
 
     def __upload_file(self, up_path, file_, dirpath):
         if CUSTOM_FILENAME is not None:
-            cap_mono = f"{CUSTOM_FILENAME} <code>{file_}</code>"
-            file_ = f"{CUSTOM_FILENAME} {file_}"
-            new_path = ospath.join(dirpath, file_)
-            osrename(up_path, new_path)
-            up_path = new_path
+        besic=file_
+        if len(file_)>60:
+         ext=file_.split('.')[-1]
+         file_='.'.join(file_.split('.')[:-1])
+         file_=file_.replace('_','.')
+         if len(file_)>(59-len(ext)):
+                file_=file_[:(59-len(ext))]
+         file_=file_+'.'+ext
+        print('saef ' +file_)
+        new_path = ospath.join(dirpath, file_)
+        osrename(up_path, new_path)
+        up_path = new_path
+            
+            
         else:
             cap_mono = f"<code>{file_}</code>"
         notMedia = False
