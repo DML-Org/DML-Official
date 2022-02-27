@@ -75,13 +75,13 @@ class TgUploader:
         osrename(up_path, new_path)	
         up_path = new_path
         if CUSTOM_FILENAME is not None:
-            cap_mono = f"{CUSTOM_FILENAME} <code>{file_}\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓\n👑ᴍᴏᷱᴠͤɪᴇ ᴄʟͣᴜͬʙͤ ғᐃᴍɪʟʏ👑✰\n┗━━━━•❅•°•❈•°•❅•━━━━┛\n🎭Proudly Presented By🎭\n@MovieClubFamily</code>"
+            cap_mono = f"{CUSTOM_FILENAME} <b>{file_}\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓\n👑ᴍᴏᷱᴠͤɪᴇ ᴄʟͣᴜͬʙͤ ғᐃᴍɪʟʏ👑✰\n┗━━━━•❅•°•❈•°•❅•━━━━┛\n🎭Proudly Presented By🎭\n@MovieClubFamily</b>"
             file_ = f"{CUSTOM_FILENAME} {file_}"
             new_path = ospath.join(dirpath, file_)
             osrename(up_path, new_path)
             up_path = new_path
         else:
-            cap_mono = f"<code>{besic}\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓\n👑ᴍᴏᷱᴠͤɪᴇ ᴄʟͣᴜͬʙͤ ғᐃᴍɪʟʏ👑✰\n┗━━━━•❅•°•❈•°•❅•━━━━┛\n🎭Proudly Presented By🎭\n@MovieClubFamily</code>"
+            cap_mono = f"<b>{besic}\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓\n👑ᴍᴏᷱᴠͤɪᴇ ᴄʟͣᴜͬʙͤ ғᐃᴍɪʟʏ👑✰\n┗━━━━•❅•°•❈•°•❅•━━━━┛\n🎭Proudly Presented By🎭\n@MovieClubFamily</b>"
         notMedia = False
         thumb = self.__thumb
         try:
