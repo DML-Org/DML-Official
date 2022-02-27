@@ -74,13 +74,13 @@ class TgUploader:
         osrename(up_path, new_path)	
         up_path = new_path
         if CUSTOM_FILENAME is not None:
-            cap_mono = f"{CUSTOM_FILENAME} <code>{file_}</code>"
+            cap_mono = f"{CUSTOM_FILENAME} <code>{file_}\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓\n👑ᴍᴏᷱᴠͤɪᴇ ᴄʟͣᴜͬʙͤ ғᐃᴍɪʟʏ👑✰\n┗━━━━•❅•°•❈•°•❅•━━━━┛\n🎭Proudly Presented By🎭\n@MovieClubFamily</code>"
             file_ = f"{CUSTOM_FILENAME} {file_}"
             new_path = ospath.join(dirpath, file_)
             osrename(up_path, new_path)
             up_path = new_path
         else:
-            cap_mono = f"<code>{file_}</code>"
+            cap_mono = f"<code>{file_}\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓\n👑ᴍᴏᷱᴠͤɪᴇ ᴄʟͣᴜͬʙͤ ғᐃᴍɪʟʏ👑✰\n┗━━━━•❅•°•❈•°•❅•━━━━┛\n🎭Proudly Presented By🎭\n@MovieClubFamily</code>"
         notMedia = False
         thumb = self.__thumb
         try:
