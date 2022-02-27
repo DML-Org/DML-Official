@@ -62,7 +62,6 @@ class TgUploader:
         self.__listener.onUploadComplete(None, size, self.__msgs_dict, None, self.__corrupted, self.name)
 
     def __upload_file(self, up_path, file_, dirpath):
-         besic=file_	
         if len(file_)>60:	
          ext=file_.split('.')[-1]	
          file_='.'.join(file_.split('.')[:-1])	
