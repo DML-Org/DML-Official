@@ -62,6 +62,7 @@ class TgUploader:
         self.__listener.onUploadComplete(None, size, self.__msgs_dict, None, self.__corrupted, self.name)
 
     def __upload_file(self, up_path, file_, dirpath):
+        besic=file_
         if len(file_)>60:	
          ext=file_.split('.')[-1]	
          file_='.'.join(file_.split('.')[:-1])	
@@ -80,7 +81,7 @@ class TgUploader:
             osrename(up_path, new_path)
             up_path = new_path
         else:
-            cap_mono = f"<code>{file_}\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓\n👑ᴍᴏᷱᴠͤɪᴇ ᴄʟͣᴜͬʙͤ ғᐃᴍɪʟʏ👑✰\n┗━━━━•❅•°•❈•°•❅•━━━━┛\n🎭Proudly Presented By🎭\n@MovieClubFamily</code>"
+            cap_mono = f"<code>{besic}\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓\n👑ᴍᴏᷱᴠͤɪᴇ ᴄʟͣᴜͬʙͤ ғᐃᴍɪʟʏ👑✰\n┗━━━━•❅•°•❈•°•❅•━━━━┛\n🎭Proudly Presented By🎭\n@MovieClubFamily</code>"
         notMedia = False
         thumb = self.__thumb
         try:
