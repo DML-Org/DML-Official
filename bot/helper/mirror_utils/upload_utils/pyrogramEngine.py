@@ -75,7 +75,6 @@ class TgUploader:
         osrename(up_path, new_path)
         up_path = new_path
             
-                    if CUSTOM_FILENAME is not None:
             cap_mono = f"{CUSTOM_FILENAME} <b>{file_}\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓\n👑ᴍᴏᷱᴠͤɪᴇ ᴄʟͣᴜͬʙͤ ғᐃᴍɪʟʏ👑✰\n┗━━━━•❅•°•❈•°•❅•━━━━┛\n🎭Proudly Presented By🎭\n@MovieClubFamily</b>"
             file_ = f"{CUSTOM_FILENAME} {file_}"
             new_path = os.path.join(dirpath, file_)
